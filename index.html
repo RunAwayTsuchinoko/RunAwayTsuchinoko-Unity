@@ -3,9 +3,52 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | RunAwayOninoko</title>
+    <title>RunAwayTsuchinoko - Christmas version</title>
+
+    <meta name="description" content="つちのこを操作して、鬼の子から逃げてねっ！">
+    <meta name="keywords" content="Unity, つちのこ, 鬼の子">
+    <meta property="og:title" content="RunAwayTsuchinoko - Christmas version">
+    <meta property="og:url" content="http://lab.hisasann.com/RunAwayTsuchinoko/">
+    <meta property="og:description" content="つちのこを操作して、鬼の子から逃げてねっ！">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://lab.hisasann.com/RunAwayTsuchinoko/.png">
+    <meta property="og:site_name" content="RunAwayTsuchinoko - Christmas version">
+
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <style>
+      body {
+        background-color: #FDF5E6;
+      }
+
+      a:link { color: #FF4500; }
+      a:visited { color: #FF4500; }
+      a:hover { color: #FF4500; }
+      a:active { color: #FF4500; }
+
+      .sns--button {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+      }
+
+      .header--logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .authors {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+      }
+
+      .authors > p {
+        margin: 5px;
+        padding: 0px;
+      }
+    </style>
     <script src="TemplateData/UnityProgress.js"></script>
   </head>
   <body class="template">
@@ -21,19 +64,36 @@
     </div>
 
     <p class="header"><span>Unity WebGL Player | </span>RunAwayTsuchinoko</p>
+    <p class="header--logo">
+      <img src="./logo_black.png" alt="" />
+    </p>
 
-    <div>
-      <div class="fb-like" data-href="http://lab.hisasann.com/RunAwayTsuchinoko/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button"{count} data-hashtags="RunAwayTsuchinoko">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <div class="sns--button">
+      <p>
+        <div class="fb-like" data-href="http://lab.hisasann.com/RunAwayTsuchinoko/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+      </p>
+      <p>
+        <a href="https://twitter.com/share" class="twitter-share-button"{count} data-hashtags="RunAwayTsuchinoko">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </p>
+    </div>
+
+    <div class="authors">
+      <h3>Authors</h3>
+      <p>
+        <a href="https://github.com/hisasann">@hisasann</a>
+      </p>
+      <p>
+        <a href="https://twitter.com/maryfujii">@maryfujii</a>
+      </p>
     </div>
 
     <div class="template-wrap clear">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="1024px"></canvas>
       <br>
-      <div class="logo"></div>
+      <!-- <div class="logo"></div> -->
       <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">RunAwayOninoko</div>
+      <div class="title">RunAwayTsuchinoko</div>
     </div>
     <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
     <script type='text/javascript'>
@@ -41,12 +101,12 @@
     TOTAL_MEMORY: 268435456,
     errorhandler: null,      // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
-    dataUrl: "r/WebGL.data",
-    codeUrl: "r/WebGL.js",
-    memUrl: "r/WebGL.mem",
+    dataUrl: "WebGL.data",
+    codeUrl: "WebGL.js",
+    memUrl: "WebGL.mem",
   };
 </script>
-<script src="r/UnityLoader.js"></script>
+<script src="UnityLoader.js"></script>
 
   </body>
 </html>

@@ -10,6 +10,7 @@ RunAwayTsuchinoko's Unity project.
 ## Authors
 
 [hisasann](https://github.com/hisasann)
+
 [maryfujii](https://twitter.com/maryfujii)
 
 :arrow_up: enjoy! :arrow_up:
